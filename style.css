@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root {
+  /* Primary */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+.grayish-blue {
+  color: var(--Grayish-Blue);
+}
+
+.very-dark-blue {
+  color: var(--Very-Dark-Blue);
+}
+
+.text-right {
+  text-align: right;
+}
+
+.white-background {
+  background-color: white;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--Very-Light-Gray);
+}
+
+.container-fluid {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.top-div {
+  max-width: 585px;
+}
+
+h1,
+h5 {
+  font-weight: 600;
+  color: var(--Very-Dark-Blue);
+}
+
+.slogan {
+  margin-bottom: 0;
+  font-size: 2rem;
+}
+
+.col {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.supervisor,
+.team-builder,
+.karma,
+.calculator {
+  width: 19rem;
+  padding: 2rem;
+  box-shadow: 0px 14px 23px rgba(0, 0, 0, 0.2);
+  height: 19rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.supervisor {
+  border-top: 7px solid var(--Cyan);
+}
+
+.team-builder {
+  border-top: 7px solid var(--Red);
+}
+
+.karma {
+  border-top: 7px solid var(--Orange);
+}
+
+.calculator {
+  border-top: 7px solid var(--Blue);
+}
+
+.image.text-right {
+  position: absolute;
+  right: 2rem;
+  bottom: 3rem;
+}
+
+.content p {
+  max-width: 18rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .supervisor,
+  .team-builder,
+  .karma,
+  .calculator {
+    width: 14rem;
+  }
+
+  .image.text-right {
+    bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    width: 90%;
+  }
+
+  .row {
+    display: grid;
+  }
+
+  .slogan {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+
+  .supervisor,
+  .team-builder,
+  .karma,
+  .calculator {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  h5 {
+    width: 100%;
+    font-size: 1.7rem;
+  }
+
+  .content p {
+    max-width: 21rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .slogan {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .slogan {
+    font-size: 19px;
+  }
+}
